@@ -1,38 +1,132 @@
 .App {
-  text-align: center;
+  background-image: url("./Assets/Images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  margin-top: -150px;
+  fill: white; 
+  font-family: Impact, Charcoal, sans-serif;
+  text-shadow: 0px 0 black, 3px 3px 0 black, 0px 0px black;
+  font-size: 72px;
+  cursor: crosshair;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Maze{
+  width: 700px; 
+  height: 610px; 
+  margin: auto;
+  background-color: rgba(48, 48, 48, 0.952);
+  margin-top: 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a{
+  background-color: rgba(121,5,5,0.918);
+  padding:10px;
+   font-size: 25px;
+   margin: 0px 450px 0px -355px;
   color: white;
+  text-decoration: none;
+}
+a:hover{
+  background-color: rgba(97, 6, 6, 0.918);
+}
+a:active{
+  cursor: wait;
+}
+.start-banner{
+width: 160px; 
+height:40px;
+border-radius: 10px;
+fill: rgba(121,5,5); 
+stroke-width: 3px;
+box-shadow: 0px 0px 0 black, 3px 3px 0 black, 0px 0px black;
+transform: translate(270px, 370px);
 }
 
-.App-link {
-  color: #61dafb;
+.level-banner{
+  transform: translate(225px, 150px);
+  fill: gray; 
+  width: 230px;
+   height: 95px; 
+}
+.load-banner{
+  width: 150px; 
+  height: 50px; 
+  fill: rgba(121,5,5,0.918); 
+  stroke-width: 3px;
+  box-shadow:  0px 0 black, 3px 3px 0 black, 0px 0px black;
+  transform: translate(267px, 240px);
+}
+.level-comp-banner{
+  transform: translate(80px, 150px);
+  fill: gray; 
+  width: 560px;
+  height: 95px;
+}
+.next-level-banner{
+  transform: translate(268px, 240px);
+  fill: rgba(121,5,5,0.918); 
+  width: 190px;
+  height: 50px;
+}
+.done-banner{
+  transform: translate(175px, 150px);
+  fill: gray;
+  width: 380px;
+  height: 95px;
+}
+.score-banner{
+  transform: translate(267px, 240px);
+  fill: rgba(121,5,5,0.918); 
+  width: 215px;
+  height: 50px;
+}
+.hidden{
+  transform: translate(330px, 250px);
+  fill: rgba(121,5,5,0);  
+  width: 40px; 
+  height: 40px;
+  cursor: pointer;
+}
+.hidden:active{
+  cursor: wait;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start-text{
+  text-shadow:  0px 0 black, 3px 3px 0 black, 0px 0px black;
+  font-size: 30px;
+  transform: translate(282px, 400px);
+  cursor: pointer;
+}
+.start-text:hover{
+  font-size: 32px;
+  transform: translate(277px, 400px);
+}
+.start-text:active{
+  cursor: wait;
+}
+.bannerLarge-text{
+  transform: translate(240px, 230px);
+}
+.bannerSmall-text{
+  text-shadow: 0px 0 black, 3px 3px 0 black, 0px 0px black;
+  font-size: 40px;
+  transform: translate(280px, 280px);
+}
+.score-text{
+  transform: translate(1000px, -120px);
+  color: white;
+  text-shadow: 0px 0 black, 3px 3px 0 black, 0px 0px black;
+  font-size: 12px; 
+}
+.comp-text{
+  transform: translate(95px, 230px);
+}
+.game-over{
+  fill:red; 
+  font-size: 100px;
+  transform: translate(140px, 300px);
+}
+.done-text{
+  transform: translate(215px, 225px);
 }
